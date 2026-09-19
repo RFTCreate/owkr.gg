@@ -523,3 +523,17 @@ OWKR.GG values:
 - Database quality over content volume.
 
 Every implementation decision should support these principles.
+
+---
+
+# OWKR.GG 仕様書参照ルール（正式）
+
+Claude Code は仕様を参照する場合、必ず以下の順番を使用する。
+
+1. OWKR.GG_SPEC_v1.0.md（唯一の正式仕様書）
+2. PHASE2.md
+3. PHASE2_TASK_XX.md
+4. SEED_DATA.md
+5. seed/*.json
+
+旧 docs/ ディレクトリ内の仕様書は参照しない。
