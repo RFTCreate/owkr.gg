@@ -41,4 +41,11 @@
     "category": "audio",
     "status": "needs_review"
   }
+  {
+  "slug": "hyperx-cloud-ii",
+  "name": "HyperX Cloud II",
+  "brand_slug": "hyperx",
+  "category": "audio",
+  "status": "published"
+}
 ]
