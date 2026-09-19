@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "OWKR.GG",
-  description: "韓国Overwatchプロのデバイス・設定データベース",
+  description: "Korean Overwatch Pro Database",
 };
 
 export default function RootLayout({
