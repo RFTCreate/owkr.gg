@@ -1,4 +1,6 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "OWKR.GG",
   description: "韓国Overwatchプロのデバイス・設定データベース",
 };
@@ -10,16 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body
-        style={{
-          margin: 0,
-          background: "#0B1120",
-          color: "white",
-          fontFamily: "sans-serif",
-        }}
-      >
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
