@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "logitech-g-pro-x-superlight-2",
+    "name": "Logitech G PRO X Superlight 2",
+    "brand_slug": "logitech",
+    "category": "mouse",
+    "status": "published"
+  },
+  {
+    "slug": "razer-viper-v3-pro",
+    "name": "Razer Viper V3 Pro",
+    "brand_slug": "razer",
+    "category": "mouse",
+    "status": "published"
+  },
+  {
+    "slug": "wooting-60he",
+    "name": "Wooting 60HE",
+    "brand_slug": "wooting",
+    "category": "keyboard",
+    "status": "published"
+  },
+  {
+    "slug": "artisan-zero-soft-xl",
+    "name": "ARTISAN ZERO SOFT XL",
+    "brand_slug": "artisan",
+    "category": "mousepad",
+    "status": "published"
+  },
+  {
+    "slug": "benq-zowie-xl2566k",
+    "name": "BenQ ZOWIE XL2566K",
+    "brand_slug": "benq-zowie",
+    "category": "monitor",
+    "status": "published"
+  },
+  {
+    "slug": "hyperx-cloud-ii",
+    "name": "HyperX Cloud II",
+    "brand_slug": "logitech",
+    "category": "audio",
+    "status": "needs_review"
+  }
+]
