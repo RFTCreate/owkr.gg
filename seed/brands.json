@@ -1,37 +1,108 @@
+
 [
   {
     "slug": "logitech",
     "name": "Logitech",
+    "logo_url": "/images/brands/logitech.webp",
+    "official_url": "https://www.logitechg.com/",
     "status": "published"
   },
   {
     "slug": "razer",
     "name": "Razer",
+    "logo_url": "/images/brands/razer.webp",
+    "official_url": "https://www.razer.com/",
     "status": "published"
   },
   {
     "slug": "wooting",
     "name": "Wooting",
+    "logo_url": "/images/brands/wooting.webp",
+    "official_url": "https://wooting.io/",
     "status": "published"
   },
   {
     "slug": "artisan",
     "name": "ARTISAN",
+    "logo_url": "/images/brands/artisan.webp",
+    "official_url": "https://artisan-jp.com/",
     "status": "published"
   },
   {
-    "slug": "benq-zowie",
-    "name": "BenQ ZOWIE",
+    "slug": "lamzu",
+    "name": "LAMZU",
+    "logo_url": "/images/brands/lamzu.webp",
+    "official_url": "https://lamzu.com/",
+    "status": "published"
+  },
+  {
+    "slug": "finalmouse",
+    "name": "Finalmouse",
+    "logo_url": "/images/brands/finalmouse.webp",
+    "official_url": "https://finalmouse.com/",
+    "status": "published"
+  },
+  {
+    "slug": "zowie",
+    "name": "ZOWIE",
+    "logo_url": "/images/brands/zowie.webp",
+    "official_url": "https://zowie.benq.com/",
+    "status": "published"
+  },
+  {
+    "slug": "benq",
+    "name": "BenQ",
+    "logo_url": "/images/brands/benq.webp",
+    "official_url": "https://www.benq.com/",
     "status": "published"
   },
   {
     "slug": "steelseries",
     "name": "SteelSeries",
+    "logo_url": "/images/brands/steelseries.webp",
+    "official_url": "https://steelseries.com/",
+    "status": "published"
+  },
+  {
+    "slug": "hyperx",
+    "name": "HyperX",
+    "logo_url": "/images/brands/hyperx.webp",
+    "official_url": "https://hyperx.com/",
+    "status": "published"
+  },
+  {
+    "slug": "pulsar",
+    "name": "Pulsar",
+    "logo_url": "/images/brands/pulsar.webp",
+    "official_url": "https://www.pulsar.gg/",
+    "status": "published"
+  },
+  {
+    "slug": "vaxee",
+    "name": "VAXEE",
+    "logo_url": "/images/brands/vaxee.webp",
+    "official_url": "https://www.vaxee.co/",
+    "status": "published"
+  },
+  {
+    "slug": "asus",
+    "name": "ASUS ROG",
+    "logo_url": "/images/brands/asus-rog.webp",
+    "official_url": "https://rog.asus.com/",
+    "status": "published"
+  },
+  {
+    "slug": "corsair",
+    "name": "Corsair",
+    "logo_url": "/images/brands/corsair.webp",
+    "official_url": "https://www.corsair.com/",
+    "status": "published"
+  },
+  {
+    "slug": "sony",
+    "name": "Sony",
+    "logo_url": "/images/brands/sony.webp",
+    "official_url": "https://www.sony.com/",
     "status": "published"
   }
-  {
-  "slug": "hyperx",
-  "name": "HyperX",
-  "status": "published"
-}
 ]
