@@ -1,26 +1,73 @@
+
 [
   {
     "slug": "team-falcons",
     "name": "Team Falcons",
     "short_name": "Falcons",
-    "status": "published"
-  },
-  {
-    "slug": "crazy-raccoon",
-    "name": "Crazy Raccoon",
-    "short_name": "CR",
+    "logo_url": "/images/teams/team-falcons.webp",
     "status": "published"
   },
   {
     "slug": "t1",
     "name": "T1",
     "short_name": "T1",
+    "logo_url": "/images/teams/t1.webp",
+    "status": "published"
+  },
+  {
+    "slug": "crazy-raccoon",
+    "name": "Crazy Raccoon",
+    "short_name": "CR",
+    "logo_url": "/images/teams/crazy-raccoon.webp",
     "status": "published"
   },
   {
     "slug": "gen-g",
     "name": "Gen.G",
     "short_name": "Gen.G",
+    "logo_url": "/images/teams/gen-g.webp",
+    "status": "published"
+  },
+  {
+    "slug": "zeta-division",
+    "name": "ZETA DIVISION",
+    "short_name": "ZETA",
+    "logo_url": "/images/teams/zeta-division.webp",
+    "status": "published"
+  },
+  {
+    "slug": "fnatic",
+    "name": "Fnatic",
+    "short_name": "FNC",
+    "logo_url": "/images/teams/fnatic.webp",
+    "status": "published"
+  },
+  {
+    "slug": "bleed-esports",
+    "name": "BLEED Esports",
+    "short_name": "BLEED",
+    "logo_url": "/images/teams/bleed-esports.webp",
+    "status": "published"
+  },
+  {
+    "slug": "o2-blast",
+    "name": "O2 Blast",
+    "short_name": "O2",
+    "logo_url": "/images/teams/o2-blast.webp",
+    "status": "published"
+  },
+  {
+    "slug": "runaway",
+    "name": "RunAway",
+    "short_name": "RunAway",
+    "logo_url": "/images/teams/runaway.webp",
+    "status": "published"
+  },
+  {
+    "slug": "sin-prisa-gaming",
+    "name": "Sin Prisa Gaming",
+    "short_name": "SPG",
+    "logo_url": "/images/teams/sin-prisa-gaming.webp",
     "status": "published"
   }
 ]
