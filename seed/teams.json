@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "team-falcons",
+    "name": "Team Falcons",
+    "short_name": "Falcons",
+    "status": "published"
+  },
+  {
+    "slug": "crazy-raccoon",
+    "name": "Crazy Raccoon",
+    "short_name": "CR",
+    "status": "published"
+  },
+  {
+    "slug": "t1",
+    "name": "T1",
+    "short_name": "T1",
+    "status": "published"
+  },
+  {
+    "slug": "gen-g",
+    "name": "Gen.G",
+    "short_name": "Gen.G",
+    "status": "published"
+  }
+]
