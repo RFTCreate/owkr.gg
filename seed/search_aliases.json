@@ -1,0 +1,13 @@
+[
+  { "player_slug": "proper", "alias": "Proper", "language": "en" },
+  { "player_slug": "proper", "alias": "プロパー", "language": "ja" },
+  { "player_slug": "proper", "alias": "프로퍼", "language": "ko" },
+
+  { "player_slug": "lip", "alias": "Lip", "language": "en" },
+  { "player_slug": "lip", "alias": "リップ", "language": "ja" },
+  { "player_slug": "lip", "alias": "립", "language": "ko" },
+
+  { "player_slug": "hanbin", "alias": "Hanbin", "language": "en" },
+  { "player_slug": "hanbin", "alias": "ハンビン", "language": "ja" },
+  { "player_slug": "hanbin", "alias": "한빈", "language": "ko" }
+]
