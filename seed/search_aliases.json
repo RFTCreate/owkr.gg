@@ -1,13 +1,51 @@
 [
   { "player_slug": "proper", "alias": "Proper", "language": "en" },
-  { "player_slug": "proper", "alias": "プロパー", "language": "ja" },
+  { "player_slug": "proper", "alias": "proper", "language": "en" },
   { "player_slug": "proper", "alias": "프로퍼", "language": "ko" },
+  { "player_slug": "proper", "alias": "プロパー", "language": "ja" },
 
   { "player_slug": "lip", "alias": "Lip", "language": "en" },
-  { "player_slug": "lip", "alias": "リップ", "language": "ja" },
+  { "player_slug": "lip", "alias": "lip", "language": "en" },
   { "player_slug": "lip", "alias": "립", "language": "ko" },
+  { "player_slug": "lip", "alias": "リップ", "language": "ja" },
+
+  { "player_slug": "stalk3r", "alias": "Stalk3r", "language": "en" },
+  { "player_slug": "stalk3r", "alias": "stalk3r", "language": "en" },
+  { "player_slug": "stalk3r", "alias": "스탈커", "language": "ko" },
+  { "player_slug": "stalk3r", "alias": "ストーカー", "language": "ja" },
+
+  { "player_slug": "heesang", "alias": "Heesang", "language": "en" },
+  { "player_slug": "heesang", "alias": "heesang", "language": "en" },
+  { "player_slug": "heesang", "alias": "희상", "language": "ko" },
+  { "player_slug": "heesang", "alias": "ヒサン", "language": "ja" },
 
   { "player_slug": "hanbin", "alias": "Hanbin", "language": "en" },
+  { "player_slug": "hanbin", "alias": "hanbin", "language": "en" },
+  { "player_slug": "hanbin", "alias": "한빈", "language": "ko" },
   { "player_slug": "hanbin", "alias": "ハンビン", "language": "ja" },
-  { "player_slug": "hanbin", "alias": "한빈", "language": "ko" }
+
+  { "player_slug": "fearless", "alias": "Fearless", "language": "en" },
+  { "player_slug": "fearless", "alias": "fearless", "language": "en" },
+  { "player_slug": "fearless", "alias": "피어리스", "language": "ko" },
+  { "player_slug": "fearless", "alias": "フィアレス", "language": "ja" },
+
+  { "player_slug": "smurf", "alias": "Smurf", "language": "en" },
+  { "player_slug": "smurf", "alias": "smurf", "language": "en" },
+  { "player_slug": "smurf", "alias": "스머프", "language": "ko" },
+  { "player_slug": "smurf", "alias": "スマーフ", "language": "ja" },
+
+  { "player_slug": "chiyo", "alias": "Chiyo", "language": "en" },
+  { "player_slug": "chiyo", "alias": "chiyo", "language": "en" },
+  { "player_slug": "chiyo", "alias": "치요", "language": "ko" },
+  { "player_slug": "chiyo", "alias": "チヨ", "language": "ja" },
+
+  { "player_slug": "fielder", "alias": "Fielder", "language": "en" },
+  { "player_slug": "fielder", "alias": "fielder", "language": "en" },
+  { "player_slug": "fielder", "alias": "필더", "language": "ko" },
+  { "player_slug": "fielder", "alias": "フィルダー", "language": "ja" },
+
+  { "player_slug": "shu", "alias": "Shu", "language": "en" },
+  { "player_slug": "shu", "alias": "shu", "language": "en" },
+  { "player_slug": "shu", "alias": "슈", "language": "ko" },
+  { "player_slug": "shu", "alias": "シュウ", "language": "ja" }
 ]
