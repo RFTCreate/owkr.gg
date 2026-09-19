@@ -1,205 +1,181 @@
 # OWKR.GG
 
-日本向け韓国Overwatchプロ・ストリーマーデータサイト
+韓国Overwatchプロ・ストリーマーの使用デバイス・ゲーム設定・SNS・YouTube Shorts を日本語でまとめたデータベースサイトです。
+
+OWKR.GG はニュースサイトではなく、「韓国Overwatchプロデータベース」を目的としたサイトです。
 
 ---
 
-## Project Overview
+## プロジェクト概要
 
-OWKR.GG は、日本のOverwatchプレイヤー向けに韓国プロ選手・ストリーマーの情報をまとめるデータベースサイトです。
+OWKR.GG は以下の情報を掲載します。
 
-このサイトは Wiki やニュースサイトではなく、「正確なデータベース」を目的として運営します。
-
-掲載情報は運営者が確認したもののみ公開し、不明な情報は掲載しません。
-
----
-
-## Mission
-
-OWKR.GG が目指すもの。
-
-* 韓国プロ選手を日本語で探せる。
-* 使用デバイスをすぐ確認できる。
-* DPI・感度などのゲーム設定を確認できる。
-* YouTube Shorts と連携して選手を知れる。
-
----
-
-## Main Features
-
-### Players
-
-* プロフィール
+* 韓国プロ選手データベース
+* 使用デバイス（マウス・キーボード・マウスパッド・モニター・オーディオ）
+* ゲーム設定（DPI・感度・Polling Rate など）
 * メインヒーロー
-* ゲーム設定
-* 使用デバイス
-* 実績
-* SNS
-* 関連ショート動画
+* チーム情報
+* ブランド情報
+* デバイス使用率ランキング
+* YouTube Shorts
+* SNSリンク
 
-### Devices
-
-* マウス
-* キーボード
-* マウスパッド
-* モニター
-* オーディオデバイス
-
-各デバイスページでは、そのデバイスを使用する韓国プロ一覧を表示します。
-
-### Teams
-
-韓国プロチームページ。
-
-ロール順で選手を表示します。
-
-* Tank
-* DPS
-* Support
-
-### Brands
-
-ブランド別ページ。
-
-例：
-
-* Logicool
-* Logitech
-* Razer
-* Wooting
-* BenQ ZOWIE
-* SteelSeries
-
-### Rankings
-
-韓国プロ使用率ランキング。
-
-例：
-
-* Mouse Ranking
-* Keyboard Ranking
-* Mousepad Ranking
-* Monitor Ranking
+掲載する情報は確認できた内容のみとし、未確認情報は公開しません。
 
 ---
 
-## Project Philosophy
+## 技術スタック
 
-OWKR.GG は以下を重視します。
-
-1. Accuracy
-2. Maintainability
-3. SEO
-4. Performance
-5. Minimal UI
-
-レビュー・価格比較・ニュースは掲載しません。
-
----
-
-## Technology Stack
-
-| Category  | Stack                |
-| --------- | -------------------- |
-| Framework | Next.js (App Router) |
-| Language  | TypeScript           |
-| Styling   | Tailwind CSS         |
-| Database  | Supabase             |
-| Storage   | Cloudflare R2        |
-| Hosting   | Cloudflare Pages     |
+| 項目        | 内容                         |
+| --------- | -------------------------- |
+| Framework | Next.js 16 (App Router)    |
+| Language  | TypeScript                 |
+| UI        | React 19 + Tailwind CSS v4 |
+| Database  | Supabase (PostgreSQL)      |
+| Hosting   | Cloudflare Pages           |
+| Icons     | lucide-react               |
 
 ---
 
-## Repository Structure
+## 開発環境
 
-```text
-app/
-components/
-lib/
-types/
-public/
-docs/
-supabase/
+推奨環境
 
-README.md
-CLAUDE.md
-TASKS.md
+* Node.js 20.9 以上
+* pnpm 10 以上
+
+### 起動方法
+
+```bash
+pnpm install
+cp .env.example .env.local
+pnpm dev
+```
+
+ブラウザで以下を開きます。
+
+```
+http://localhost:3000
 ```
 
 ---
 
-## Development Phases
+## よく使うコマンド
+
+| コマンド             | 内容               |
+| ---------------- | ---------------- |
+| `pnpm dev`       | 開発サーバー起動         |
+| `pnpm build`     | 本番ビルド            |
+| `pnpm start`     | 本番サーバー起動         |
+| `pnpm lint`      | ESLint 実行        |
+| `pnpm typecheck` | TypeScript 型チェック |
+
+---
+
+## ディレクトリ構成
+
+```
+owkr-gg/
+├── app/                    # Next.js App Router
+├── components/             # UIコンポーネント
+├── lib/                    # Supabase・Queries・Utils
+├── public/                 # 画像・アイコン
+├── seed/                   # 初期データ(JSON)
+├── supabase/               # SQL・Seed・設定
+│
+├── CLAUDE.md
+├── OWKR.GG_SPEC_v1.0.md
+├── PHASE2.md
+├── PHASE2_TASK_01_SUPABASE.md
+├── SEED_DATA.md
+└── README.md
+```
+
+---
+
+## 仕様書
+
+OWKR.GG の仕様は **OWKR.GG_SPEC_v1.0.md** を唯一の正式仕様書（Single Source of Truth）とします。
+
+優先順位
+
+1. `OWKR.GG_SPEC_v1.0.md`
+2. `CLAUDE.md`
+3. `PHASE2.md`
+4. `PHASE2_TASK_XX.md`
+5. `SEED_DATA.md`
+6. `seed/*.json`
+
+旧 `docs/` ディレクトリ内の仕様書は参照しません。
+
+---
+
+## 開発フェーズ
 
 ### Phase 1
 
-* Project setup
-* Layout
-* Home page
-* Theme
-* SEO
+* プロジェクト初期構築
+* デザインシステム
+* トップページ
+* ダークモード
 
 ### Phase 2
 
-* Players
-* Devices
-* Teams
-* Brands
-* Rankings
-* Search
+* Supabase構築
+* Playersページ
+* Devicesページ
+* Brandsページ
+* Teamsページ
+* Rankingsページ
+* Searchページ
+* Adminページ
 
 ### Phase 3
 
-* Admin Dashboard
-* CRUD
-* Media
-* Affiliate Management
-
-### Phase 4
-
-* Streamers
-* Statistics
-* Search Improvements
+* Cloudflare Pages デプロイ
+* 独自ドメイン `owkr.gg`
+* 本番公開
 
 ---
 
-## Documentation
+## データ運営ルール
 
-Detailed specifications are stored inside `/docs`.
+OWKR.GG は事実確認を重視します。
 
-| Document   | Description               |
-| ---------- | ------------------------- |
-| Chapter 00 | Project Charter           |
-| Chapter 01 | Brand Identity            |
-| Chapter 02 | Design System             |
-| Chapter 03 | Home Page                 |
-| Chapter 04 | Player Page               |
-| Chapter 05 | Database Design           |
-| Chapter 06 | Search & SEO              |
-| Chapter 07 | Device Page               |
-| Chapter 08 | Brand Page                |
-| Chapter 09 | Team Page                 |
-| Chapter 10 | Rankings                  |
-| Chapter 11 | Admin Dashboard           |
-| Chapter 12 | Implementation            |
-| Appendix A | Asset Rules               |
-| Appendix B | Source Verification Rules |
+### 公開ステータス
 
----
+| Status         | 公開 |
+| -------------- | -- |
+| `draft`        | ❌  |
+| `needs_review` | ❌  |
+| `published`    | ✅  |
 
-## Development Rules
+`needs_review` は管理画面で保持し、公開ページには表示しません。
 
-Claude Code must follow `CLAUDE.md`.
+### 情報ソース優先順位
 
-Project specifications are maintained inside `/docs`.
+1. 選手本人（配信・SNS）
+2. チーム公式
+3. メーカー公式
+4. Liquipedia
+5. その他信頼できる情報源
 
-Do not implement features that are not documented.
+推測値は登録しません。
 
 ---
 
-## Affiliate Disclosure
+## Amazonアソシエイトについて
 
-OWKR.GG participates in the Amazon Associates Program.
+OWKR.GG は Amazon アソシエイト・プログラムに参加しています。
 
-Some links on device pages may contain affiliate links.
+Amazon 商品リンクはデバイスページ・選手ページの DeviceCard のみ表示します。
 
-Affiliate links are displayed only on individual device cards.
+ランキングページ・ブランドページには表示しません。
+
+---
+
+## ライセンス
+
+本リポジトリは OWKR.GG の開発用リポジトリです。
+
+画像・ロゴ・選手写真などの権利は各権利者に帰属します。
