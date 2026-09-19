@@ -1,10 +1,10 @@
 
 -- ============================================================
 -- OWKR.GG Database Schema v1.0
--- Part A : Extensions / Enums / Common Functions / Triggers
+-- Part A : Extensions / ENUM Types / Common Functions
 -- ============================================================
 
--- UUID生成
+-- UUID生成拡張
 create extension if not exists "pgcrypto";
 
 -- ============================================================
@@ -18,7 +18,7 @@ create type public.content_status as enum (
   'published'
 );
 
--- ロール
+-- プレイヤーロール
 create type public.player_role as enum (
   'tank',
   'dps',
@@ -42,7 +42,8 @@ create type public.alias_language as enum (
 );
 
 -- ============================================================
--- 共通 updated_at Trigger
+-- 共通 Trigger Function
+-- updated_at を自動更新する
 -- ============================================================
 
 create or replace function public.handle_updated_at()
@@ -55,30 +56,14 @@ begin
 end;
 $$;
 
--- ============================================================
--- 使用率計算用 View（ランキングで利用）
--- ============================================================
-
-create or replace view public.device_usage_summary as
-select
-  d.id as device_id,
-  d.slug,
-  d.name,
-  d.category,
-  d.brand_id,
-  count(du.player_id) filter (where du.is_current = true) as player_count
-from public.devices d
-left join public.device_usage du
-  on du.device_id = d.id
-group by d.id;
-
-comment on view public.device_usage_summary is
-'現在使用中プロ人数を集計するビュー';
+comment on function public.handle_updated_at()
+is 'updated_at を更新時に UTC 現在時刻へ更新する Trigger';
 
 -- ============================================================
--- Utility Function : eDPI計算
+-- Utility Functions
 -- ============================================================
 
+-- eDPI = DPI × Sensitivity
 create or replace function public.calculate_edpi(
   dpi integer,
   sensitivity numeric
@@ -91,12 +76,9 @@ as $$
 $$;
 
 comment on function public.calculate_edpi(integer, numeric)
-is 'eDPI = DPI × Sensitivity';
+is 'eDPI を計算する';
 
--- ============================================================
--- Utility Function : 使用率(%)
--- ============================================================
-
+-- 使用率 (%) = 使用人数 ÷ 公開中プレイヤー人数 × 100
 create or replace function public.calculate_usage_percent(
   player_count integer,
   total_players integer
@@ -105,24 +87,27 @@ returns integer
 language sql
 immutable
 as $$
-select
-  case
+  select case
     when total_players = 0 then 0
     else round((player_count::numeric / total_players) * 100)::integer
   end;
 $$;
 
 comment on function public.calculate_usage_percent(integer, integer)
-is '韓国プロ使用率を整数で返す';
+is '韓国プロ使用率を整数(%)で返す';
 
--- ============================================================
--- 共通 Timestamp Helper
--- ============================================================
-
+-- 現在時刻 (UTC)
 create or replace function public.current_timestamp_utc()
 returns timestamptz
 language sql
 stable
 as $$
-select timezone('utc', now());
+  select timezone('utc', now());
 $$;
+
+comment on function public.current_timestamp_utc()
+is 'UTC の現在時刻を返す';
+
+-- ============================================================
+-- Part A End
+-- ============================================================
