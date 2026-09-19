@@ -38,16 +38,27 @@ Player ID is always lowercase English.
 Every player page follows this order.
 
 1. HeroCard
-2. ProfileCard
-3. MainHeroCard
-4. SettingsCard
-5. Device Section
-6. AchievementCard
-7. Same Device Players
-8. Same Team Players
-9. Shorts Section
-10. SNSCard
-11. UpdateCard
++2. SummaryCard ⭐
+-2. ProfileCard
++3. ProfileCard
+-3. MainHeroCard
++4. MainHeroCard
+-4. SettingsCard
++5. SettingsCard
+-5. Device Section
++6. Device Section
+-6. AchievementCard
++7. AchievementCard
+-7. Same Device Players
++8. Same Device Players
+-8. Same Team Players
++9. Same Team Players
+-9. Shorts Section
++10. Shorts Section
+-10. SNSCard
++11. SNSCard
+-11. UpdateCard
++12. UpdateCard
 
 The order is fixed.
 
@@ -70,6 +81,46 @@ Contains:
 Do not include biography here.
 
 ---
+
+# 4.5 SummaryCard ⭐ NEW
+
+Purpose:
+
+Allow Shorts viewers to understand a player in less than 30 seconds.
+
+The SummaryCard is displayed directly below the HeroCard.
+
+It summarizes the player's most important information before the detailed cards.
+
+## Layout
+
+Display as a compact two-column information card.
+
+### Fields
+
+| Field | Required |
+|-------|----------|
+| Team | Yes |
+| Role | Yes |
+| Main Heroes | Yes |
+| Mouse | Yes |
+
+Rules:
+
+- Hero icons are displayed.
+- Mouse links to the Device Page.
+- No Amazon button inside SummaryCard.
+- Always visible on every player page.
+
+Example order:
+
+Team Falcons
+
+DPS
+
+Tracer / Cassidy / Sojourn
+
+Logitech G PRO X Superlight 2
 
 # 4.5 ProfileCard
 
