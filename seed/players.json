@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "proper",
+    "english_name": "Proper",
+    "korean_name": "프로퍼",
+    "japanese_name": "プロパー",
+    "role": "dps",
+    "team_slug": "team-falcons",
+    "status": "published"
+  },
+  {
+    "slug": "lip",
+    "english_name": "Lip",
+    "korean_name": "립",
+    "japanese_name": "リップ",
+    "role": "dps",
+    "team_slug": "team-falcons",
+    "status": "published"
+  },
+  {
+    "slug": "stalk3r",
+    "english_name": "Stalk3r",
+    "korean_name": "스탈커",
+    "japanese_name": "ストーカー",
+    "role": "dps",
+    "team_slug": "team-falcons",
+    "status": "published"
+  },
+  {
+    "slug": "heesang",
+    "english_name": "HeeSang",
+    "korean_name": "희상",
+    "japanese_name": "ヒサン",
+    "role": "dps",
+    "team_slug": "team-falcons",
+    "status": "published"
+  },
+  {
+    "slug": "hanbin",
+    "english_name": "Hanbin",
+    "korean_name": "한빈",
+    "japanese_name": "ハンビン",
+    "role": "tank",
+    "team_slug": "team-falcons",
+    "status": "published"
+  },
+  {
+    "slug": "shu",
+    "english_name": "Shu",
+    "korean_name": "슈",
+    "japanese_name": "シュー",
+    "role": "support",
+    "team_slug": "team-falcons",
+    "status": "published"
+  },
+  {
+    "slug": "ch0r0ng",
+    "english_name": "Ch0r0ng",
+    "korean_name": "초롱",
+    "japanese_name": "チョロン",
+    "role": "support",
+    "team_slug": "team-falcons",
+    "status": "published"
+  },
+  {
+    "slug": "viol2t",
+    "english_name": "Viol2t",
+    "korean_name": "바이올렛",
+    "japanese_name": "バイオレット",
+    "role": "support",
+    "team_slug": "",
+    "status": "needs_review"
+  },
+  {
+    "slug": "jjonak",
+    "english_name": "JJoNak",
+    "korean_name": "쩨낙",
+    "japanese_name": "ジェイジョナク",
+    "role": "support",
+    "team_slug": "",
+    "status": "needs_review"
+  },
+  {
+    "slug": "haksal",
+    "english_name": "Haksal",
+    "korean_name": "학살",
+    "japanese_name": "ハクサル",
+    "role": "dps",
+    "team_slug": "",
+    "status": "needs_review"
+  }
+]
