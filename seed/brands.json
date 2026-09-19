@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "logitech",
+    "name": "Logitech",
+    "status": "published"
+  },
+  {
+    "slug": "razer",
+    "name": "Razer",
+    "status": "published"
+  },
+  {
+    "slug": "wooting",
+    "name": "Wooting",
+    "status": "published"
+  },
+  {
+    "slug": "artisan",
+    "name": "ARTISAN",
+    "status": "published"
+  },
+  {
+    "slug": "benq-zowie",
+    "name": "BenQ ZOWIE",
+    "status": "published"
+  },
+  {
+    "slug": "steelseries",
+    "name": "SteelSeries",
+    "status": "published"
+  }
+]
